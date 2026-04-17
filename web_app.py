@@ -22,7 +22,7 @@ load_dotenv()
 # Set up API keys using Streamlit's secrets management
 # For local development, these will be read from .streamlit/secrets.toml
 # On Streamlit Cloud, they will be read from the repository's secrets
-groq_api_key = st.secrets.get("GROQ_API_KEY")
+groq_api_key = st.secrets.get("API")
 os.environ["SERPAPI_API_KEY"] = st.secrets.get("SERPAPI_API_KEY")
 os.environ["HF_TOKEN"] = st.secrets.get("HF_TOKEN")
 st.set_page_config(page_title="Web RAG with Groq & SerpApi", layout="wide")
